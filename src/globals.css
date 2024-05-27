@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply box-border list-none p-0 m-0 scroll-smooth;
+  }
+
+  body {
+    @apply min-h-screen;
+  }
+}
+
+@layer utilities {
+  .flex-between {
+    @apply flex items-center justify-between;
+  }
+
+  .container {
+    @apply max-w-[1300px] m-auto;
+  }
+
+  .h1-bold {
+    @apply text-[36px] font-bold;
+  }
+
+  .h1-semibold {
+    @apply text-[36px] font-semibold;
+  }
+
+  .h2-bold {
+    @apply text-[30px] font-bold;
+  }
+
+  .h3-bold {
+    @apply text-[24px] font-bold;
+  }
+}
